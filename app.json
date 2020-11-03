@@ -1,0 +1,12 @@
+{
+  "name": "clone-account-mbanking",
+  "displayName": "clone-account-mbanking",
+  "expo": {
+    "name": "clone-account-mbanking",
+    "slug": "clone-account-mbanking",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

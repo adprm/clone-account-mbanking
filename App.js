@@ -16,6 +16,7 @@ const HomeScreen = () => {
       <View style={styles.listItem}>
         <Setting />
         <Help />
+        <Terms />
       </View>
     </View>
   )
@@ -45,6 +46,15 @@ const Help = () => {
     <View style={styles.list}>
       <Ionicons style={styles.icon} size={35} name='ios-help-circle-outline' />
       <Text style={styles.descSaldo}>Bantuan</Text>
+    </View>
+  )
+}
+
+const Terms = () => {
+  return (
+    <View style={styles.list}>
+      <Ionicons style={styles.icon} size={35} name='ios-paper' />
+      <Text style={styles.descSaldo}>Syarat & Ketentuan</Text>
     </View>
   )
 }

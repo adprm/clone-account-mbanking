@@ -17,6 +17,7 @@ const HomeScreen = () => {
         <Setting />
         <Help />
         <Terms />
+        <Logout />
       </View>
     </View>
   )
@@ -55,6 +56,15 @@ const Terms = () => {
     <View style={styles.list}>
       <Ionicons style={styles.icon} size={35} name='ios-paper' />
       <Text style={styles.descSaldo}>Syarat & Ketentuan</Text>
+    </View>
+  )
+}
+
+const Logout = () => {
+  return (
+    <View style={styles.list}>
+      <Ionicons style={styles.icon} size={35} name='ios-log-out' />
+      <Text style={styles.descSaldo}>Keluar</Text>
     </View>
   )
 }

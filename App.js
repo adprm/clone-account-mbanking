@@ -14,6 +14,7 @@ const HomeScreen = () => {
       </View>
       <Saldo />
       <Setting />
+      <Help />
     </View>
   )
 }
@@ -33,6 +34,15 @@ const Setting = () => {
     <View style={styles.list}>
       <Ionicons style={styles.icon} size={35} name='ios-cog' />
       <Text style={styles.descSaldo}>Pengaturan</Text>
+    </View>
+  )
+}
+
+const Help = () => {
+  return (
+    <View style={styles.list}>
+      <Ionicons style={styles.icon} size={35} name='ios-help-circle-outline' />
+      <Text style={styles.descSaldo}>Bantuan</Text>
     </View>
   )
 }
@@ -84,7 +94,7 @@ const styles = StyleSheet.create({
 
   // Saldo
   saldo: {
-    marginTop: 4,
+    marginTop: 6,
     height: 65,
     backgroundColor: '#ffffff',
     flexDirection: 'row',
@@ -98,7 +108,7 @@ const styles = StyleSheet.create({
 
   // list
   list: {
-    marginTop: 4,
+    marginTop: 2,
     height: 60,
     backgroundColor: '#ffffff',
     flexDirection: 'row',

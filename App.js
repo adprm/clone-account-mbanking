@@ -1,21 +1,107 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Profile from './assets/image/profile.png';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export default function App() {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <View style={styles.account}>
+        <Image source={Profile} style={styles.avatar} />
+        <Text style={styles.name}>Aditiya Permana</Text>
+      </View>
+      <Saldo />
+      <Setting />
+    </View>
+  )
+}
+
+const Saldo = () => {
+  return (
+    <View style={styles.saldo}>
+      <Ionicons style={styles.icon} size={35} name='ios-card' />
+      <Text style={styles.descSaldo}>Saldo</Text>
+      <Text style={{marginLeft: 140}}>Rp. 302.976.000,00</Text>
     </View>
   );
 }
 
+const Setting = () => {
+  return (
+    <View style={styles.list}>
+      <Ionicons style={styles.icon} size={35} name='ios-cog' />
+      <Text style={styles.descSaldo}>Pengaturan</Text>
+    </View>
+  )
+}
+
+const Stack = createStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Account" component={HomeScreen} options={{
+          headerStyle: {
+            backgroundColor: '#14aeff'
+          },
+          headerTintColor: '#fff'
+        }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
+
+export default App
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#edece8',
   },
-});
+
+  // Icon
+  account: {
+    height: 85,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  avatar: {
+    height: 60,
+    width: 60,
+    borderRadius: 60,
+    marginRight: 14,
+    marginLeft: 10,
+  },
+  name: {
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginLeft: 4,
+  },
+
+  // Saldo
+  saldo: {
+    marginTop: 4,
+    height: 65,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  icon: {
+    color: '#14aeff',
+    marginLeft: 10,
+    marginRight: 14,
+  },
+
+  // list
+  list: {
+    marginTop: 4,
+    height: 60,
+    backgroundColor: '#ffffff',
+    flexDirection: 'row',
+    alignItems: 'center',
+  }
+})

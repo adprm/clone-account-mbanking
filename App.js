@@ -13,8 +13,10 @@ const HomeScreen = () => {
         <Text style={styles.name}>Aditiya Permana</Text>
       </View>
       <Saldo />
-      <Setting />
-      <Help />
+      <View style={styles.listItem}>
+        <Setting />
+        <Help />
+      </View>
     </View>
   )
 }
@@ -106,9 +108,14 @@ const styles = StyleSheet.create({
     marginRight: 14,
   },
 
+  // ListItem
+  listItem: {
+    marginTop: 4,
+  },
+
   // list
   list: {
-    marginTop: 2,
+    marginTop: 1,
     height: 60,
     backgroundColor: '#ffffff',
     flexDirection: 'row',

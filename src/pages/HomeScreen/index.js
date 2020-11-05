@@ -4,6 +4,7 @@ import ProfileAccount from '../ProfileAccount';
 import Saldo from '../Saldo';
 import Trasnfer from '../Transfer';
 import Mutation from '../Mutation';
+import DateMutation from '../DateMutation';
 
 const HomeScreen = () => {
     return (
@@ -12,16 +13,13 @@ const HomeScreen = () => {
             <Saldo />
             <Trasnfer />
             <Mutation />
-            {/* <Saldo />
-            <Transfer />
-            <Mutation />
             <DateMutation />
             <View style={styles.listItem}>
-                <Setting />
+                {/* <Setting />
                 <Help />
                 <Terms />
-                <Logout />
-            </View> */}
+                <Logout /> */}
+            </View>
         </View>
     )
 }

@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import ProfileAccount from '../ProfileAccount';
 import Saldo from '../Saldo';
 import Trasnfer from '../Transfer';
+import Mutation from '../Mutation';
 
 const HomeScreen = () => {
     return (
@@ -10,6 +11,7 @@ const HomeScreen = () => {
             <ProfileAccount />
             <Saldo />
             <Trasnfer />
+            <Mutation />
             {/* <Saldo />
             <Transfer />
             <Mutation />

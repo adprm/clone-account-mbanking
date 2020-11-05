@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#edece8',
     },
-    // ListItem
     listItem: {
         marginTop: 4,
     },

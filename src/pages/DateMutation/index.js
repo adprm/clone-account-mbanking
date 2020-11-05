@@ -18,13 +18,12 @@ const styles = StyleSheet.create({
         color: '#015daa',
         marginLeft: 10,
         marginRight: 14,
-      },
-      // list
-      list: {
-        marginTop: 1,
-        height: 60,
-        backgroundColor: '#ffffff',
-        flexDirection: 'row',
-        alignItems: 'center',
-      }
+    },
+    list: {
+      marginTop: 1,
+      height: 60,
+      backgroundColor: '#ffffff',
+      flexDirection: 'row',
+      alignItems: 'center',
+    }
 })

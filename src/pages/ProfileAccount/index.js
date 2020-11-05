@@ -14,24 +14,23 @@ const ProfileAccount = () => {
 export default ProfileAccount;
 
 const styles = StyleSheet.create({
-    // Icon
     account: {
         height: 85,
         backgroundColor: '#ffffff',
         flexDirection: 'row',
         alignItems: 'center',
-      },
-      avatar: {
-        height: 60,
-        width: 60,
-        borderRadius: 60,
-        marginRight: 14,
-        marginLeft: 10,
-      },
-      name: {
-        justifyContent: 'center',
-        fontWeight: 'bold',
-        fontSize: 18,
-        marginLeft: 4,
-      },
+    },
+    avatar: {
+      height: 60,
+      width: 60,
+      borderRadius: 60,
+      marginRight: 14,
+      marginLeft: 10,
+    },
+    name: {
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      fontSize: 18,
+      marginLeft: 4,
+    },
 })

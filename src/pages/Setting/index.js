@@ -6,7 +6,7 @@ const Setting = () => {
     return (
         <View style={styles.list}>
             <Ionicons style={styles.icon} size={33} name='ios-cog' />
-            <Text style={styles.descSaldo}>Pengaturan</Text>
+            <Text>Pengaturan</Text>
         </View>
     )
 }
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginRight: 14,
     },
-    // list
     list: {
       marginTop: 1,
       height: 60,

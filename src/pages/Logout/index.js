@@ -6,7 +6,7 @@ const Logout = () => {
     return (
         <View style={styles.list}>
             <Ionicons style={styles.icon} size={33} name='ios-log-out' />
-            <Text style={styles.descSaldo}>Keluar</Text>
+            <Text>Keluar</Text>
         </View>
     )
 }
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         marginRight: 14,
     },
-    // list
     list: {
       marginTop: 1,
       height: 60,

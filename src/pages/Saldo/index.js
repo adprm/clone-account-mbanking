@@ -6,7 +6,7 @@ const Saldo = () => {
     return (
         <View style={styles.saldo}>
             <Ionicons style={styles.icon} size={33} name='ios-card' />
-            <Text style={styles.descSaldo}>Saldo</Text>
+            <Text>Saldo</Text>
             <Text style={{marginLeft: 165}}>Rp. 302.976.000</Text>
         </View>
     )
@@ -21,10 +21,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
         flexDirection: 'row',
         alignItems: 'center',
-      },
-      icon: {
-        color: '#015daa',
-        marginLeft: 10,
-        marginRight: 14,
-      },
+    },
+    icon: {
+      color: '#015daa',
+      marginLeft: 10,
+      marginRight: 14,
+    },
 })

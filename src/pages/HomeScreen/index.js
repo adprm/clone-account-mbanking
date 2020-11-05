@@ -7,6 +7,7 @@ import Mutation from '../Mutation';
 import DateMutation from '../DateMutation';
 import Setting from '../Setting';
 import Help from '../Help';
+import Terms from '../Terms';
 
 const HomeScreen = () => {
     return (
@@ -19,6 +20,7 @@ const HomeScreen = () => {
             <View style={styles.listItem}>
                 <Setting />
                 <Help />
+                <Terms />
                 {/* <Setting />
                 <Help />
                 <Terms />

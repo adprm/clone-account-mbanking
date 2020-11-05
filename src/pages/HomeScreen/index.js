@@ -8,6 +8,7 @@ import DateMutation from '../DateMutation';
 import Setting from '../Setting';
 import Help from '../Help';
 import Terms from '../Terms';
+import Logout from '../Logout';
 
 const HomeScreen = () => {
     return (
@@ -21,10 +22,7 @@ const HomeScreen = () => {
                 <Setting />
                 <Help />
                 <Terms />
-                {/* <Setting />
-                <Help />
-                <Terms />
-                <Logout /> */}
+                <Logout />
             </View>
         </View>
     )
